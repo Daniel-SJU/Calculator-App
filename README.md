@@ -1,2 +1,2 @@
 # Calculator-App
-A simple angular based calculator application.
+A simple Angular based calculator application.
