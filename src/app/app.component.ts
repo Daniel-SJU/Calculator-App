@@ -26,6 +26,14 @@ export class AppComponent implements OnInit {
     this.invokeParticles();
   }
 
+  /**
+   * Initializes and invokes the particles.js library with the specified configuration.
+   *
+   * This method targets the HTML element with the ID 'particles-js' and applies the
+   * provided `ParticlesConfig` to create a particle effect.
+   *
+   * @returns {void}
+   */
   invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function () {});
   }
