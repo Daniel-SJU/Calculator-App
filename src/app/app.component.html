@@ -1,0 +1,32 @@
+<div id="calculator-containter" class="w-full h-screen flex justify-center items-center">
+<div id="particles-js" class=" h-full w-full absolute inset-10"></div>
+  <div class="calculator z-10">
+    <div [formGroup]="calculatorForm" id="functions" class="flex flex-col h-full justify-center items-center -mt-19">
+      <div id="screen" class="flex flex-row text-lg">
+        <input class="h-10 w-[300px]" type="text" formControlName="inputValue" >
+      </div>
+      <div id="operands" class="flex flex-row justify-center pt-5 gap-4 flex-wrap max-w-[280px] text-lg text-white font-medium">
+        <button class="calc-btn" (click)="clear()">C</button>
+        <button class="calc-btn" (click)="addToOperation($event)">(</button>
+        <button class="calc-btn" (click)="addToOperation($event)">)</button>
+        <button class="calc-btn" (click)="addToOperation($event)">%</button>
+        <button class="calc-btn" (click)="addToOperation($event)">1</button>
+        <button class="calc-btn" (click)="addToOperation($event)">2</button>
+        <button class="calc-btn" (click)="addToOperation($event)">3</button>
+        <button class="calc-btn" (click)="addToOperation($event)">/</button>
+        <button class="calc-btn" (click)="addToOperation($event)">4</button>
+        <button class="calc-btn" (click)="addToOperation($event)">5</button>
+        <button class="calc-btn" (click)="addToOperation($event)">6</button>
+        <button class="calc-btn" (click)="addToOperation($event)">*</button>
+        <button class="calc-btn" (click)="addToOperation($event)">7</button>
+        <button class="calc-btn" (click)="addToOperation($event)">8</button>
+        <button class="calc-btn" (click)="addToOperation($event)">9</button>
+        <button class="calc-btn" (click)="addToOperation($event)">-</button>
+        <button class="calc-btn" (click)="addToOperation($event)">0</button>
+        <button class="calc-btn" (click)="addToOperation($event)">.</button>
+        <button class="submit-btn" (click)="evaluate()">=</button>
+        <button class="calc-btn" (click)="addToOperation($event)">+</button>
+      </div>
+    </div>
+  </div>
+</div>

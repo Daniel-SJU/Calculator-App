@@ -1,0 +1,12 @@
+.calculator {
+    @apply mx-auto w-[500px] h-[500px] bg-gradient-to-b from-black from-10% via-slate-950 via-30% to-red-800 to-60% rounded-md
+    border-8 animate-border-pulse z-10
+}
+
+.calc-btn {
+    @apply rounded-md bg-black w-12
+}
+
+.submit-btn{
+    @apply rounded-md bg-amber-400 w-12
+}
